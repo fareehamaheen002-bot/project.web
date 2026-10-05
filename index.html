@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saffron & Smoke | Premium Restaurant</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            Saffron <span>&</span> Smoke
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <button class="order-btn" id="openCart">
+                        <i class="bi bi-bag"></i>
+                        <span id="cartCount">0</span>
+                    </button>
+                </li>
+
+                <li class="nav-item ms-lg-2">
+                    <a href="#reservation" class="gold-btn">
+                        Reserve Table
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <p class="small-title">
+            WELCOME TO SAFFRON & SMOKE
+        </p>
+
+        <h1>
+            Where Every Dish<br>
+            <span>Tells a Story.</span>
+        </h1>
+
+        <p class="hero-text">
+            An unforgettable dining experience crafted with
+            passion, tradition and modern elegance.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="gold-btn">
+                Explore Menu
+            </a>
+
+            <a href="#reservation" class="outline-btn">
+                Book a Table
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="section-padding" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                         alt="Restaurant food">
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p class="section-label">OUR STORY</p>
+
+                <h2 class="section-title">
+                    Crafted with Passion,<br>
+                    Served with Soul.
+                </h2>
+
+                <p class="text-muted">
+                    Saffron & Smoke brings together timeless culinary
+                    traditions and contemporary flavours.
+                </p>
+
+                <p class="text-muted">
+                    Every ingredient is carefully selected and every
+                    dish is prepared with attention to detail.
+                    Our goal is simple — to make every visit memorable.
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-4">
+                        <h3>12+</h3>
+                        <p>Years Experience</p>
+                    </div>
+
+                    <div class="col-4">
+                        <h3>45+</h3>
+                        <p>Signature Dishes</p>
+                    </div>
+
+                    <div class="col-4">
+                        <h3>4.9</h3>
+                        <p>Guest Rating</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MENU -->
+<section class="section-padding menu-section" id="menu">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-label">OUR MENU</p>
+
+            <h2 class="section-title">
+                Signature Creations
+            </h2>
+
+            <p class="text-muted">
+                Discover dishes created to delight every sense.
+            </p>
+
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="menu-filters text-center mb-5">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="starter">
+                Starters
+            </button>
+
+            <button class="filter-btn" data-filter="main">
+                Main Course
+            </button>
+
+            <button class="filter-btn" data-filter="dessert">
+                Desserts
+            </button>
+
+        </div>
+
+
+        <div class="row g-4" id="menuContainer">
+
+            <!-- ITEM 1 -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="starter">
+
+                <div class="food-card">
+
+                    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=900"
+                         alt="Food">
+
+                    <div class="food-info">
+
+                        <div class="d-flex justify-content-between">
+                            <h4>Truffle Croquettes</h4>
+                            <span>₹420</span>
+                        </div>
+
+                        <p>
+                            Crispy croquettes with creamy truffle filling.
+                        </p>
+
+                        <button class="add-cart"
+                                data-name="Truffle Croquettes"
+                                data-price="420">
+                            Add to Order
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ITEM 2 -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="starter">
+
+                <div class="food-card">
+
+                    <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=900"
+                         alt="Starter">
+
+                    <div class="food-info">
+
+                        <div class="d-flex justify-content-between">
+                            <h4>Garden Bruschetta</h4>
+                            <span>₹360</span>
+                        </div>
+
+                        <p>
+                            Toasted artisan bread with fresh garden toppings.
+                        </p>
+
+                        <button class="add-cart"
+                                data-name="Garden Bruschetta"
+                                data-price="360">
+                            Add to Order
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ITEM 3 -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="main">
+
+                <div class="food-card">
+
+                    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=900"
+                         alt="Main course">
+
+                    <div class="food-info">
+
+                        <div class="d-flex justify-content-between">
+                            <h4>Royal Grilled Platter</h4>
+                            <span>₹890</span>
+                        </div>
+
+                        <p>
+                            Char-grilled vegetables and perfectly seasoned protein.
+                        </p>
+
+                        <button class="add-cart"
+                                data-name="Royal Grilled Platter"
+                                data-price="890">
+                            Add to Order
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ITEM 4 -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="main">
+
+                <div class="food-card">
+
+                    <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=900"
+                         alt="Pasta">
+
+                    <div class="food-info">
+
+                        <div class="d-flex justify-content-between">
+                            <h4>Creamy Artisan Pasta</h4>
+                            <span>₹640</span>
+                        </div>
+
+                        <p>
+                            Handmade pasta finished with a rich creamy sauce.
+                        </p>
+
+                        <button class="add-cart"
+                                data-name="Creamy Artisan Pasta"
+                                data-price="640">
+                            Add to Order
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ITEM 5 -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="dessert">
+
+                <div class="food-card">
+
+                    <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=900"
+                         alt="Dessert">
+
+                    <div class="food-info">
+
+                        <div class="d-flex justify-content-between">
+                            <h4>Chocolate Indulgence</h4>
+                            <span>₹390</span>
+                        </div>
+
+                        <p>
+                            Rich chocolate dessert with a delicate finish.
+                        </p>
+
+                        <button class="add-cart"
+                                data-name="Chocolate Indulgence"
+                                data-price="390">
+                            Add to Order
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ITEM 6 -->
+            <div class="col-md-6 col-lg-4 menu-item" data-category="dessert">
+
+                <div class="food-card">
+
+                    <img src="https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&w=900"
+                         alt="Chocolate cake">
+
+                    <div class="food-info">
+
+                        <div class="d-flex justify-content-between">
+                            <h4>Velvet Chocolate Cake</h4>
+                            <span>₹450</span>
+                        </div>
+
+                        <p>
+                            Soft chocolate layers with a luxurious cream filling.
+                        </p>
+
+                        <button class="add-cart"
+                                data-name="Velvet Chocolate Cake"
+                                data-price="450">
+                            Add to Order
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CHEF SPECIAL -->
+<section class="chef-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <p class="section-label">
+                    CHEF'S SPECIAL
+                </p>
+
+                <h2 class="section-title">
+                    The Saffron Signature
+                </h2>
+
+                <p>
+                    A carefully balanced creation inspired by classic
+                    flavours and modern culinary techniques.
+                </p>
+
+                <div class="price">
+                    ₹1,250
+                </div>
+
+                <a href="#menu" class="gold-btn">
+                    Discover More
+                </a>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <img class="chef-image"
+                     src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                     alt="Chef special">
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- GALLERY -->
+<section class="section-padding" id="gallery">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-label">GALLERY</p>
+
+            <h2 class="section-title">
+                A Taste of the Experience
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img class="gallery-img"
+                 src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Gallery">
+
+            <img class="gallery-img"
+                 src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Gallery">
+
+            <img class="gallery-img"
+                 src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Gallery">
+
+            <img class="gallery-img"
+                 src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Gallery">
+
+            <img class="gallery-img"
+                 src="https://images.pexels.com/photos/3184192/pexels-photo-3184192.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Restaurant">
+
+            <img class="gallery-img"
+                 src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Dining">
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- RESERVATION -->
+<section class="reservation-section" id="reservation">
+
+    <div class="reservation-overlay"></div>
+
+    <div class="container text-center reservation-content">
+
+        <p class="section-label">
+            YOUR TABLE AWAITS
+        </p>
+
+        <h2>
+            Make Your Evening<br>
+            <span>Unforgettable.</span>
+        </h2>
+
+        <button class="gold-btn" data-bs-toggle="modal"
+                data-bs-target="#reservationModal">
+            Reserve Your Table
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section-padding" id="contact">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-label">CONTACT</p>
+
+            <h2 class="section-title">
+                Visit Saffron & Smoke
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+                    <i class="bi bi-geo-alt"></i>
+
+                    <h4>Our Location</h4>
+
+                    <p>
+                        24 Royal Avenue,<br>
+                        Chennai, India
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+                    <i class="bi bi-clock"></i>
+
+                    <h4>Opening Hours</h4>
+
+                    <p>
+                        Monday - Sunday<br>
+                        11:00 AM - 11:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+                    <i class="bi bi-telephone"></i>
+
+                    <h4>Call Us</h4>
+
+                    <p>
+                        +91 98765 43210<br>
+                        +91 98765 12345
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <h3>Saffron <span>&</span> Smoke</h3>
+
+                <p>
+                    Exceptional food. Elegant atmosphere.
+                    Unforgettable memories.
+                </p>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <h5>Quick Links</h5>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h5>Follow Us</h5>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Saffron & Smoke. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+
+        <h3>Your Order</h3>
+
+        <button id="closeCart">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-bottom">
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+
+        <button class="gold-btn w-100" id="checkoutBtn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- GALLERY LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+
+    <button id="closeLightbox">
+        <i class="bi bi-x-lg"></i>
+    </button>
+
+    <button id="prevImage">
+        <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <img id="lightboxImage" src="" alt="Gallery image">
+
+    <button id="nextImage">
+        <i class="bi bi-chevron-right"></i>
+    </button>
+
+</div>
+
+
+<!-- RESERVATION MODAL -->
+<div class="modal fade" id="reservationModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content reservation-modal">
+
+            <div class="modal-header">
+
+                <h4>Reserve Your Table</h4>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="reservationForm">
+
+                    <input type="text"
+                           id="guestName"
+                           placeholder="Your Name"
+                           required>
+
+                    <input type="email"
+                           id="guestEmail"
+                           placeholder="Email Address"
+                           required>
+
+                    <input type="date"
+                           id="guestDate"
+                           required>
+
+                    <select id="guestPeople" required>
+
+                        <option value="">
+                            Number of Guests
+                        </option>
+
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5+ Guests</option>
+
+                    </select>
+
+                    <button class="gold-btn w-100" type="submit">
+                        Confirm Reservation
+                    </button>
+
+                </form>
+
+                <div id="reservationMessage"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- BACK TO TOP -->
+<button id="backTop">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
